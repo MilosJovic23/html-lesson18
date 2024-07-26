@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.navigacija {
+	height: 100px;
+	width: 100%;
+	background-color: rgb(26, 26, 26);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+}
+.navigacija a {
+	text-decoration: none;
+	color: rgb(241, 241, 241);
+}
+.navigacija a:hover {
+	color: blrgb(81, 81, 201);
+}
+.imageHolder img {
+	width: 100%;
+}
+.div1 {
+	width: 33%;
+	background-color: red;
+	height: 50px;
+}
+.div2 {
+	width: 33%;
+	height: 50px;
+	background-color: purple;
+}
+.div3 {
+	width: 33%;
+	height: 50px;
+	background-color: rgb(85, 3, 85);
+}
+.f1Slika {
+	width: 100%;
+}
+.footer {
+	width: 100%;
+	height: 50px;
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+	.divHolder {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+	.div1 {
+		width: 100%;
+	}
+	.div2 {
+		width: 45%;
+	}
+	.div3 {
+		width: 45%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.navigacija {
+		justify-content: flex-start;
+		gap: 20px;
+	}
+	.imageHolder {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		margin-top: 50px;
+	}
+	.imageHolder img {
+		width: 40%;
+	}
+	.divHolder {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+	.div1 {
+		width: 30%;
+	}
+	.div2 {
+		width: 30%;
+	}
+	.div3 {
+		width: 30%;
+	}
+
+	.div2:first-child {
+		order: 1;
+	}
+	.div1 {
+		order: 2;
+	}
+	.div3:last-child {
+		order: 3;
+	}
+	.f1Slika {
+		display: none;
+	}
+	.footer {
+		display: none;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1078px) {
+	.imageHolder img {
+		width: 35%;
+	}
+}
