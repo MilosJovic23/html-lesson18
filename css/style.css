@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 }
-.navigacija {
+.navigation {
 	height: 100px;
 	width: 100%;
 	background-color: rgb(26, 26, 26);
@@ -12,11 +12,11 @@
 	align-items: center;
 	gap: 15px;
 }
-.navigacija a {
+.navigation a {
 	text-decoration: none;
 	color: rgb(241, 241, 241);
 }
-.navigacija a:hover {
+.navigation a:hover {
 	color: blrgb(81, 81, 201);
 }
 .imageHolder img {
@@ -68,7 +68,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-	.navigacija {
+	.navigation {
 		justify-content: flex-start;
 		gap: 20px;
 	}
